@@ -16,7 +16,6 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
-  /* width: 1230px; */
 }
 
 .list {
@@ -27,21 +26,19 @@ body {
 }
 
 .container {
-  /* display: flex; */
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Logo */
 
 .logo {
   margin-right: 93px;
-  /* margin-left: 15px; */
 
   color: var(--primary-black-color);
   font-family: Raleway, sans-serif;
@@ -110,18 +107,25 @@ body {
   margin-right: 50px;
 }
 
+.header-border-bottom-line {
+  border-bottom: solid 1px;
+  border-bottom-color: #ececec;
+}
+
 /* Hero */
 
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
-  /* text-align: center; */
 }
 
 .hero {
   background-color: var(--hero-footer-background);
-  /* width: 1230px; */
+  width: 1200px;
   height: 600px;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-title {
@@ -205,6 +209,8 @@ body {
   line-height: 1.19px;
   text-align: center;
   color: var(--main-titles-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .teammate-position {
@@ -224,30 +230,53 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
+}
+
+.portfolio-buttons-list {
+  display: flex;
+  justify-content: center;
+
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.margin {
+  margin-bottom: 50px;
+}
+.portfolio-buttons-list .button-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.portfolio-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .portfolio-flex-container {
   display: flex;
   flex-wrap: wrap;
-  /* background-color: teal; */
-  /* margin: -15px; */
 }
+
 .portfolio-flex-element {
   /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке */
-
   width: calc((100% - 60px) / 3);
-  /* margin-right: 30px; */
-  /* margin-bottom: 30px; */
-
-  /* background-color: tomato; */
-
-  /* margin-right: 30px; */
-  /* margin-bottom: 30px; */
 }
+
+.border-bottom {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-block-color: #eeeeee;
+}
+/* Для всех елементов-карточек в сетке добавить маржин справа, кроме каждого третего (так как в ряду - три елемента) */
+
 .portfolio-flex-element:not(:nth-child(3n)) {
   margin-right: 30px;
 }
+
+/* Для всех елементов-карточек в сетке добавить маржин снизу, кроме последних трех елементов (так как в нижнем ряду - три елемента) */
 
 .portfolio-flex-element:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
@@ -261,6 +290,11 @@ body {
   cursor: pointer;
   border-color: #ffffff;
   border: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  /* min-width: 73px; */
 }
 
 .filter-buttons:hover,
@@ -272,6 +306,9 @@ body {
 /* Cards */
 
 .cards-header {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -280,6 +317,8 @@ body {
 }
 
 .cards-description {
+  margin: 0;
+
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -290,11 +329,33 @@ body {
 
 .footer {
   background-color: var(--hero-footer-background);
-  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid tomato; */
 }
-
+.footer-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
 .footer-logo {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+
   color: var(--primary-white-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.footer-list .item {
+  padding-bottom: 9px;
 }
 
 .footer-address {
@@ -303,7 +364,9 @@ body {
   font-style: normal;
   text-decoration: none;
 }
-
+.footer-list .last {
+  padding-bottom: 60px;
+}
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
