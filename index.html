@@ -17,18 +17,18 @@
 
 <body>
     <!-- Шапка сайта -->
-    <header>
-        <div class="container list header-border-bottom-line">
+    <header class="header-border-bottom-line">
+        <div class="container flex">
             <nav class="nav">
                 <a href="./index.html" class="logo"><span class="first-part">Web</span>Studio</a>
     
-                <ul class="list">
+                <ul class="flex">
                     <li class="item"><a href="./index.html" class="site-nav link current">Студия</a></li>
                     <li class="item"> <a href="./portfolio.html" class="site-nav link">Портфолио</a></li>
                     <li class="item"><a href="#" class="site-nav link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="list auth-nav">
+            <ul class="auth-nav">
                 <li class="item"><a href="mailto:info@devstudio.com" class="link contacts">info@devstudio.com</a></li>
                 <li class="item"><a href="tel:+380961111111" class="link contacts">+38 096 111 11 11</a></li>
             </ul>
@@ -47,28 +47,28 @@
         <!-- Преимущества -->
         <section class="section">
             <div class="container">
-                <h2 hidden class="section-title">Наши преимущества </h2>
-                <ul class="list">
-                    <li class="content">
-                        <h3 class="benefit-title">Внимание к деталям</h3>
+                <h2 class="visually-hidden section-title">Наши преимущества </h2>
+                <ul class="benefits">
+                    <li class="benefits-item">
+                        <h3 class="benefits-title">Внимание к деталям</h3>
                         <p>
                             Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
-                    <li class="content">
-                        <h3 class="benefit-title">Пунктуальность</h3>
+                    <li class="benefits-item">
+                        <h3 class="benefits-title">Пунктуальность</h3>
                         <p>
                             Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                         </p>
                     </li>
-                    <li class="content">
-                        <h3 class="benefit-title">Планирование</h3>
+                    <li class="benefits-item">
+                        <h3 class="benefits-title">Планирование</h3>
                         <p>
                             Равным образом консультация с широким активом в значительной степени обуславливает.
                         </p>
                     </li>
-                    <li class="content">
-                        <h3 class="benefit-title">Современные технологии</h3>
+                    <li class="benefits-item">
+                        <h3 class="benefits-title">Современные технологии</h3>
                         <p>
                             Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                         </p>
@@ -78,55 +78,63 @@
         </section>
 
         <!-- Чем мы занимаемся -->
-        <section class="section">
-            <h2 class="section-title">Чем мы занимаемся</h2>
+        <section class="section work-section">
                 <div class="container">
-                    <ul class="list">
-                        <li class="flex-element">
-                            <img src="./images/tablet.jpg" alt="Tablet and keyboard" width="370" height="294" />
+                    <h2 class="section-title">Чем мы занимаемся</h2>
+                    <ul class="practice">
+                        <li class="practice-item">
+                            <img class="img" src="./images/tablet.jpg" alt="Tablet and keyboard" width="370" height="294" />
                         </li>
-                        <li class="flex-element">
-                            <img src="./images/iphone.jpg" alt="Iphone and laptop" width="370" height="294" />
+                        <li class="practice-item">
+                            <img class="img" src="./images/iphone.jpg" alt="Iphone and laptop" width="370" height="294" />
                         </li>
-                        <li class="flex-element">
-                            <img src="./images/ipad.jpg" alt="Ipad and pensil" width="370" height="294" />
+                        <li class="practice-item">
+                            <img class="img" src="./images/ipad.jpg" alt="Ipad and pensil" width="370" height="294" />
                         </li>
                     </ul>
                 </div>
         </section>
 
         <!-- Наша команда -->
-        <section class="section">
-            <h2 class="section-title">Наша команда</h2>
-                <div class="container size">
-                    <ul class="list">
-                        <li class="content">
-                            <img src="./images/ihor.jpg" alt="Product Designer" width="270"/>
-                            <h3 class="teammate-title">Игорь Демьяненко</h3>
-                            <p class="teammate-position">
-                                Product Designer
-                            </p>
+        <section class="section team-section work-section">
+                <div class="container">
+                    <h2 class="section-title">Наша команда</h2>
+                    <ul class="teammate">
+                        <li class="teammate-item">
+                            <img class="img" src="./images/ihor.jpg" alt="Product Designer" width="270"/>
+                            <div class="teammate-content">
+                                <h3 class="teammate-title">Игорь Демьяненко</h3>
+                                <p class="teammate-position">
+                                    Product Designer
+                                </p>
+                            </div>
                         </li>
-                        <li class="content">
-                            <img src="./images/olha.jpg" alt="Frontend Developer" width="270"/>
-                            <h3 class="teammate-title">Ольга Репина</h3>
-                            <p class="teammate-position">
-                                Frontend Developer
-                            </p>
+                        <li class="teammate-item">
+                            <img class="img" src="./images/olha.jpg" alt="Frontend Developer" width="270"/>
+                            <div class="teammate-content">
+                                <h3 class="teammate-title">Ольга Репина</h3>
+                                <p class="teammate-position">
+                                    Frontend Developer
+                                </p>
+                            </div>
                         </li>
-                        <li class="content">
-                            <img src="./images/nylolay.jpg" alt="Marketing" width="270"/>
-                            <h3 class="teammate-title">Николай Тарасов</h3>
-                            <p class="teammate-position">
-                                Marketing
-                            </p>
+                        <li class="teammate-item">
+                            <img class="img" src="./images/nylolay.jpg" alt="Marketing" width="270"/>
+                            <div class="teammate-content">
+                                <h3 class="teammate-title">Николай Тарасов</h3>
+                                <p class="teammate-position">
+                                    Marketing
+                                </p>
+                            </div>
                         </li>
-                        <li class="content">
-                            <img src="./images/mykhailo.jpg" alt="UI Designer" width="270"/>
-                            <h3 class="teammate-title">Михаил Ермаков</h3>
-                            <p class="teammate-position">
-                                UI Designer
-                            </p>
+                        <li class="teammate-item">
+                            <img class="img" src="./images/mykhailo.jpg" alt="UI Designer" width="270"/>
+                            <div class="teammate-content">
+                                <h3 class="teammate-title">Михаил Ермаков</h3>
+                                <p class="teammate-position">
+                                    UI Designer
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -135,15 +143,16 @@
 
     <!-- Футер -->
     <footer class="footer">
+        <div class="container">
             <a href="./index.html" class="footer-logo"><span class="first-part">Web</span>Studio</a>
-            <address>
+            <address class="footer-address-list">
                 <ul class="footer-list">
-                    <li class="item"><a href="https://goo.gl/maps/6iYoXaCGqueHrKsz9" target="_blank" rel="noreferrer noopener"
-                            class="footer-address">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="item"><a href="https://goo.gl/maps/6iYoXaCGqueHrKsz9" target="_blank" rel="noreferrer noopener"                        class="footer-address">г. Киев, пр-т Леси Украинки, 26</a></li>
                     <li class="item"><a href="mailto:info@devstudio.com" class="link footer-contacts">info@devstudio.com</a></li>
-                    <li class="item last"><a href="tel:+380961111111" class="link footer-contacts">+38 096 111 11 11</a></li>
+                    <li class="item"><a href="tel:+380961111111" class="link footer-contacts">+38 096 111 11 11</a></li>
                 </ul>
             </address>
+        </div>
     </footer>
 </body>
 </html>
