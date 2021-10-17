@@ -21,6 +21,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
@@ -90,9 +94,10 @@ body {
   margin-left: auto;
   align-items: center;
 }
-.link {
+
+/* .link {
   text-decoration: none;
-}
+} */
 
 .link:hover,
 .link:focus {
@@ -129,8 +134,9 @@ body {
   background-color: var(--hero-footer-background);
   margin-right: auto;
   margin-left: auto;
-  padding: 200px;
-
+  padding: 200px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1600px;
   height: 600px;
 
@@ -213,6 +219,7 @@ body {
 .benefits-title {
   margin-top: 0px;
   margin-bottom: 10px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -285,7 +292,7 @@ body {
   padding: 6px 22px;
 
   color: var(--title-text-color);
-  background-color: var(--primary-white-color);
+  background-color: #f5f4fa;
   font-size: 16px;
   line-height: 1.63;
   cursor: pointer;
